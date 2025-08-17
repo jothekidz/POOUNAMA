@@ -1,0 +1,21 @@
+public class Carro {
+    private String marca;
+    private String modelo;
+    private int ano;
+
+    public Carro(String marca, String modelo, int ano) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+    }
+
+    public void mostrarInformacoes() {
+        System.out.println("marca: " + marca);
+        System.out.println("modelo: " + modelo);
+        System.out.println("ano: " + ano);
+    }
+
+    public void ligar() {
+        System.out.println(modelo + " está ligado! ");
+    }
+}
