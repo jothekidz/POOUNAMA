@@ -1,0 +1,22 @@
+public class Autor {
+    private String nome;
+    private String nacionalidade;
+    private int anoNascimento;
+
+    public Autor(String nome, String nacionalidade, int anoNascimento) {
+        this.nome = nome;
+        this.nacionalidade = nacionalidade;
+        this.anoNascimento = anonascimento;
+    }
+
+    public void exibirBiografia() {
+        System.out.println(nome + " (" + anoNascimento + ") - " + nacionalidade);
+    }
+
+    public boolean isBrasileiro() {
+        return nacionalidade.equalsIgnoreCase("Brasil");
+    }
+
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
+}
